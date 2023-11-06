@@ -24,8 +24,7 @@ After this data is cached, simple subtraction is done to find the actual time ta
 Finally, the data can be exported into an Excel friendly CSV file.
 
 # Images
-
-<p align="center">
+<div align="center">
   <img width="500" height="100%" src="./docs/img/plannedVactual.png">
-  <p>employee names censored</p>
-</p>
+</div>
+  <p align="center">employee names censored</p>
