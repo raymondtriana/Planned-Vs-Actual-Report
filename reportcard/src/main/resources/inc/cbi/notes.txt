@@ -1,0 +1,40 @@
+Planned VS Actual
+Extract the planned for that driver for that day
+first planned start
+last planned end
+
+
+HOS Records
+actual end first off duty after pre trip
+actual start the start time for the record previous to the first chronological record with a different odometer to the pre-trip
+
+
+//table creation
+
+DROP TABLE IF EXISTS planned;
+
+CREATE TABLE "planned" (
+	"entryID"	INTEGER NOT NULL UNIQUE,
+	"driver"	TEXT NOT NULL,
+	"date"	TEXT NOT NULL,
+	"plannedStart"	TEXT NOT NULL,
+	"plannedEnd"	TEXT NOT NULL,
+	PRIMARY KEY("entryID" AUTOINCREMENT)
+)
+
+Make a class for a driver with
+	driver Name
+	planned start
+	planned end
+	actual start
+	actual end
+	date
+	Tractor
+	Trailer
+	DriverID//username in HOS
+
+
+Have one class instantiated for every driver in an array
+
+//COMBINE BOTH TABLES
+SELECT * FROM plannedActual LEFT JOIN hosRecords USING(driver)
