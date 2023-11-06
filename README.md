@@ -28,5 +28,5 @@ Finally, the data can be exported into an Excel friendly CSV file.
   <img width="500" height="100%" src="./docs/img/plannedVactual.png">
 </div>
   <p align="center">
-    <em>employee names censored</em>
+    <em>names censored</em>
   </p>
